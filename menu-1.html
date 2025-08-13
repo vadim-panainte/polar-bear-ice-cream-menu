@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polar Bear Ice Cream Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url(https://www.transparenttextures.com/patterns/ice-cream.png), linear-gradient(177deg, #e0f7fa 11%, #ffb6c1 127%);
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-size: 300px, cover;
+      background-repeat: repeat, no-repeat;
+      margin-left: 100px;
+    }
+    header {
+      margin-top: 32px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-left: -80px;
+    }
+    .logo {
+      width: 160px;
+      height: auto;
+      filter: drop-shadow(0 4px 16px #fff8);
+    }
+    .keywest {
+      width: 350px;
+      height: auto;
+      position: absolute;
+      left: 0;
+      top: 172px;
+      border-radius: 5px;
+      box-shadow: #ffb6c1 0px 24px 25px, #e0f7fa 0px -12px 30px, #ffb6c1 0px 4px 6px, #e0f7fa 0px 12px 13px, #ffb6c1 0px -3px 5px;
+    }
+    .sundae-background {
+      width: 300px;
+      height: auto;
+      position: absolute;
+      right: 50px;
+      top: 132px;
+      border-radius: 5px;
+      box-shadow: #ffb6c1 0px 24px 25px, #e0f7fa 0px -12px 30px, #ffb6c1 0px 4px 6px, #e0f7fa 0px 12px 13px, #ffb6c1 0px -3px 5px;
+    }
+    .wavy-circle {
+      --s: 600px; /* adjust to control the size */
+      width: var(--s); 
+      aspect-ratio: 1;
+      --g:/calc(var(--s)*0.101) calc(var(--s)*0.101) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+      mask: calc(50% + var(--s)*0.422) calc(50% + var(--s)*0.1) var(--g),calc(50% + var(--s)*0.388) calc(50% + var(--s)*0.195) var(--g),calc(50% + var(--s)*0.333) calc(50% + var(--s)*0.279) var(--g),calc(50% + var(--s)*0.259) calc(50% + var(--s)*0.348) var(--g),calc(50% + var(--s)*0.172) calc(50% + var(--s)*0.399) var(--g),calc(50% + var(--s)*0.075) calc(50% + var(--s)*0.427) var(--g),calc(50% + var(--s)*-0.025) calc(50% + var(--s)*0.433) var(--g),calc(50% + var(--s)*-0.124) calc(50% + var(--s)*0.416) var(--g),calc(50% + var(--s)*-0.217) calc(50% + var(--s)*0.376) var(--g),calc(50% + var(--s)*-0.298) calc(50% + var(--s)*0.316) var(--g),calc(50% + var(--s)*-0.363) calc(50% + var(--s)*0.239) var(--g),calc(50% + var(--s)*-0.408) calc(50% + var(--s)*0.148) var(--g),calc(50% + var(--s)*-0.431) calc(50% + var(--s)*0.05) var(--g),calc(50% + var(--s)*-0.431) calc(50% + var(--s)*-0.05) var(--g),calc(50% + var(--s)*-0.408) calc(50% + var(--s)*-0.148) var(--g),calc(50% + var(--s)*-0.363) calc(50% + var(--s)*-0.239) var(--g),calc(50% + var(--s)*-0.298) calc(50% + var(--s)*-0.316) var(--g),calc(50% + var(--s)*-0.217) calc(50% + var(--s)*-0.376) var(--g),calc(50% + var(--s)*-0.124) calc(50% + var(--s)*-0.416) var(--g),calc(50% + var(--s)*-0.025) calc(50% + var(--s)*-0.433) var(--g),calc(50% + var(--s)*0.075) calc(50% + var(--s)*-0.427) var(--g),calc(50% + var(--s)*0.172) calc(50% + var(--s)*-0.399) var(--g),calc(50% + var(--s)*0.259) calc(50% + var(--s)*-0.348) var(--g),calc(50% + var(--s)*0.333) calc(50% + var(--s)*-0.279) var(--g),calc(50% + var(--s)*0.388) calc(50% + var(--s)*-0.195) var(--g),calc(50% + var(--s)*0.422) calc(50% + var(--s)*-0.1) var(--g),calc(50% + var(--s)*0.434) calc(50% + var(--s)*0) var(--g),radial-gradient(calc(var(--s)*0.475),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0.487) calc(50% + var(--s)*0.177) var(--g),calc(50% + var(--s)*0.433) calc(50% + var(--s)*0.285) var(--g),calc(50% + var(--s)*0.356) calc(50% + var(--s)*0.377) var(--g),calc(50% + var(--s)*0.259) calc(50% + var(--s)*0.449) var(--g),calc(50% + var(--s)*0.149) calc(50% + var(--s)*0.497) var(--g),calc(50% + var(--s)*0.03) calc(50% + var(--s)*0.518) var(--g),calc(50% + var(--s)*-0.09) calc(50% + var(--s)*0.511) var(--g),calc(50% + var(--s)*-0.205) calc(50% + var(--s)*0.476) var(--g),calc(50% + var(--s)*-0.31) calc(50% + var(--s)*0.416) var(--g),calc(50% + var(--s)*-0.397) calc(50% + var(--s)*0.333) var(--g),calc(50% + var(--s)*-0.463) calc(50% + var(--s)*0.233) var(--g),calc(50% + var(--s)*-0.504) calc(50% + var(--s)*0.12) var(--g),calc(50% + var(--s)*-0.518) calc(50% + var(--s)*0) var(--g),calc(50% + var(--s)*-0.504) calc(50% + var(--s)*-0.12) var(--g),calc(50% + var(--s)*-0.463) calc(50% + var(--s)*-0.233) var(--g),calc(50% + var(--s)*-0.397) calc(50% + var(--s)*-0.333) var(--g),calc(50% + var(--s)*-0.31) calc(50% + var(--s)*-0.416) var(--g),calc(50% + var(--s)*-0.205) calc(50% + var(--s)*-0.476) var(--g),calc(50% + var(--s)*-0.09) calc(50% + var(--s)*-0.511) var(--g),calc(50% + var(--s)*0.03) calc(50% + var(--s)*-0.518) var(--g),calc(50% + var(--s)*0.149) calc(50% + var(--s)*-0.497) var(--g),calc(50% + var(--s)*0.259) calc(50% + var(--s)*-0.449) var(--g),calc(50% + var(--s)*0.356) calc(50% + var(--s)*-0.377) var(--g),calc(50% + var(--s)*0.433) calc(50% + var(--s)*-0.285) var(--g),calc(50% + var(--s)*0.487) calc(50% + var(--s)*-0.177) var(--g),calc(50% + var(--s)*0.515) calc(50% + var(--s)*-0.06) var(--g),calc(50% + var(--s)*0.515) calc(50% + var(--s)*0.06) var(--g);
+      background: url(https://www.transparenttextures.com/patterns/ice-cream.png), linear-gradient(135deg, #e0f7fa 0%, #ffb6c1 100%);
+    }
+    .blob {
+      aspect-ratio: 1;
+      clip-path: shape(from 89.54% 70.99%,curve to 82.44% 81.44% with 85.59% 75.86%,curve to 74.00% 90.88% with 79.29% 87.03%,curve to 61.92% 93.10% with 68.70% 94.72%,curve to 49.23% 92.73% with 55.13% 91.49%,curve to 37.00% 93.44% with 43.34% 93.98%,curve to 24.44% 90.44% with 30.67% 92.90%,curve to 16.92% 80.78% with 18.22% 87.99%,curve to 9.29% 69.78% with 15.62% 73.57%,curve to 3.60% 59.25% with 2.96% 66.00%,curve to 7.25% 46.84% with 4.24% 52.50%,curve to 11.40% 35.55% with 10.27% 41.18%,curve to 15.52% 24.85% with 12.53% 29.93%,curve to 22.52% 14.99% with 18.50% 19.76%,curve to 32.33% 7.75% with 26.54% 10.21%,curve to 44.36% 6.23% with 38.13% 5.28%,curve to 56.66% 7.01% with 50.58% 7.19%,curve to 69.29% 7.81% with 62.73% 6.84%,curve to 80.30% 13.60% with 75.84% 8.79%,curve to 86.90% 24.43% with 84.75% 18.42%,curve to 90.03% 36.25% with 89.04% 30.44%,curve to 90.56% 47.68% with 91.02% 42.06%,curve to 91.79% 59.71% with 90.09% 53.29%,curve to 89.54% 70.99% with 93.49% 66.13%);
+    }
+    .shape {
+      aspect-ratio: 1.233;
+      clip-path: shape(from 97.54% 10.91%,curve by -10.93% -10.76% with -2.11% -5.38%/-6.13% -9.91%,curve by -15.78% 7.98% with -5.83% -1.03%/-11.32% 3.26%,curve by -14.36% 12.27% with -4.46% 4.71%/-8.72% 10.15%,curve by -30.93% -4.53% with -10.05% 3.75%/-20.44% -4.47%,curve to 7.15% 25.66% with 18.67% 15.81%/11.86% 19.43%,curve by 19.9% 70.23% with -17.4% 23.09%/-0.05% 60.08%,curve by 49.46% -9.07% with 16.08% 8.22%/35.34% 3.57%,curve by 23.23% -53.55% with 13.43% -12.03%/21.71% -33.18%,curve by 0.25% -4.77% with 0.1% -1.63%/0.2% -3.2%,curve to 97.54% 10.91% with 100.09% 22.46%/99.64% 16.29%,close);
+    }
+    h1 {
+      font-family: 'Fredoka One', 'Baloo 2', cursive;
+      font-size: 3rem;
+      color: #1976d2;
+      letter-spacing: 2px;
+      margin: 0 0 12px 0;
+      text-shadow: 2px 2px 8px #fff8, 0 0 16px #ffb6c1;
+      position: relative;
+    }
+    main {
+      width: 71vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 12px;
+      font-size: 1.5rem;
+      margin-bottom: 32px;
+    }
+    caption {
+      opacity: 0;
+      height: 0;
+    }
+    table thead th:first-child {
+      font-family: 'Fredoka One', 'Baloo 2', cursive;
+      font-size: 2rem;
+      color: #d81b60;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 6px #fff7;
+      padding-left: 0;
+      text-align: left;
+    }
+    th, td {
+      padding: 16px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: 700;
+    }
+    th[scope="row"] {
+      color: #1976d2;
+      text-align: left;
+      font-weight: 700;
+      position: relative;
+    }
+    thead th {
+      color: #0d47a1;
+      letter-spacing: 1px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    dl {
+      font-size: 1rem;
+      margin: 0 0 24px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 30px;
+      margin-right: 40px;
+    }
+    dt {
+      font-family: 'Fredoka One', 'Baloo 2', cursive;
+      color: #d81b60;
+      font-size: 2rem;
+      text-shadow: 1px 1px 6px #fff7;
+    }
+    dd {
+      margin: 0 0 8px 0;
+      color: #333;
+      position: relative;
+      padding-left: 1.5em;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+    }
+    dl dd:first-of-type::before, dl dd.no-icon::before {
+      content: "";
+    }
+    dd::before {
+      content: "🍬";
+      position: absolute;
+      left: 0;
+      font-size: 1.1em;
+    }
+    .footer-logo {
+      width: 200px;
+      opacity: 0.85;
+      filter: drop-shadow(0 2px 8px #fff8);
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+    }
+    .break {
+      flex-basis: 100%;
+      height: 0;
+    }
+    dt, dd {
+      float: left;
+    }
+
+    /* Clear floats after the dl or the last dd if necessary */
+    dl::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .sprinkles::before {
+      background-image: url(./sprinkles_icon.png);
+    }
+    .sundae::before {
+      background-image: url(./sundae_icon.png);
+    }
+    .sundae {
+      font-weight: 700;
+      margin-top: -30px;
+    }
+    .gummy-bear::before {
+      background-image: url(./gummy-bear_icon.png);
+    }
+    .oreo::before {
+      background-image: url(./oreo_icon.png);
+    }
+    .m-and-m::before {
+      background-image: url(./m&m_icon.png);
+    }
+    .marshmallow-ghost::before {
+      background-image: url(./marshmallow-ghost_icon.png);
+    }
+    .gummy-worm::before {
+      background-image: url(./gummy-worm_icon.png);
+    }
+    .dd-icon::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 5px;
+    }
+    .sundae-and-toppings-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+    .dl-sundae {
+      width: 65%;
+    }
+    .add-topping-price {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      margin: auto 0;
+      flex-basis: 70%;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <img src="./key-west-icecream-1.jpeg" alt="Key West Ice Cream" class="keywest">
+  <img src="./sundae.jpeg" alt="Key West Sundae" class="sundae-background">
+  <header>
+    <img src="./polar-bear-ice-cream-logo-1.webp" alt="Polar Bear Ice Cream Logo" class="logo">
+    <h1>Polar Bear Ice Cream Menu</h1>
+  </header>
+  <main>
+    <div class="ice-cream-wrapper">
+      <table>
+        <caption>Ice Cream</caption>
+        <thead>
+          <tr>
+            <th scope="col">Ice Cream</th>
+            <th scope="col">Small</th>
+            <th scope="col">Medium</th>
+            <th scope="col">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Regular Cone / Cup</th>
+            <td>$ 6.49</td>
+            <td>$ 7.49</td>
+            <td>$ 8.49</td>
+          </tr>
+          <tr>
+            <th scope="row">Sugar Cone</th>
+            <td>$ 7.25</td>
+            <td>$ 8.25</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Waffle Cone</th>
+            <td>$ 8.49</td>
+            <td>$ 9.49</td>
+            <td>$ 10.45</td>
+          </tr>
+          <tr>
+            <th scope="row">Dream Cone</th>
+            <td>$ 9.49</td>
+            <td>$ 10.49</td>
+            <td>$ 11.49</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="sundae-and-toppings-wrapper">
+      <dl class="toppings">
+        <dt>Toppings</dt>
+        <dd class="add-topping-price">add 1 $</dd>
+        <dd class="sprinkles dd-icon">Rainbow or Chocolate sprinkles</dd>
+        <dd class="gummy-bear dd-icon">Gummy Bears</dd>
+        <dd class="oreo dd-icon">Oreos</dd>
+        <dd class="m-and-m dd-icon">m&m's</dd>
+        <dd class="marshmallow-ghost dd-icon">mini marshmallows</dd>
+        <dd class="gummy-worm dd-icon">gummy worms</dd>
+        <dd>and more</dd>
+      </dl>
+      <dl class="dl-sundae">
+        <dt>Sundae</dt>
+        <dd class="break sundae dd-icon">$ 10.49</dd>
+      </dl>
+    </div>
+  </main>
+  <img src="./polar-bear-ice-cream-logo.webp" alt="Polar Bear Logo" class="footer-logo">
+</body>
+</html>
